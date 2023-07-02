@@ -1,4 +1,5 @@
 import src.bhaskara.eq_bhaskara as eq_bhaskara
+import src.bhaskara.eq_segundo_grau as eq_segundo_grau
 
 
 def test_rais1():
@@ -10,7 +11,12 @@ def test_rais1():
 def test_raiz2():
     print("estou no arquivo que testa bhaskara")
     r1, r2 = eq_bhaskara.raizes(1, 5, -6)
-    # return (1*r2**2 + 5*r2 + -6)
+    assert (1*r2**2 + 5*r2 + -6) == 0
+
+
+def test_solucoes():
+    print("estou no arquivo que testa 2o grau")
+    r1, r2 = eq_segundo_grau.incognitas(1, 5, -6)
     assert (1*r2**2 + 5*r2 + -6) == 0
 
 # Why PyTest is not collecting tests (collected 0 items)?
