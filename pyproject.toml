@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 # informações do projeto para envio ao pypi.org
 [project]
 name = "trab_devops_ci_cd_process"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
   { name="Ricardo Báfica Pontes", email="ricardo.bafica@gmail.com" },
 ]
